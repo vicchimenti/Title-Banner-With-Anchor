@@ -1,32 +1,42 @@
 /* Start TitleBanner CSS */
 #id
-<t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage{
-background-image: url('
-<t4 type="content" name="Image for Medium-Large Screens" output="imageurl" xhtml="false" />');
-background-position:
-<t4 type="content" name="Background horizontal positioning" output="selective-output" modifiers="striptags,htmlentities"
-    format="$value" /> center;
+<t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage {
+    background-image: url('
+
+    <t4 type="content"
+        name="Image for Medium-Large Screens"
+        output="imageurl"
+        xhtml="false" />');
+
+
+    background-position:
+    <t4 type="content"
+        name="Background horizontal positioning"
+        output="selective-output"
+        modifiers="striptags,htmlentities"
+        format="$value" /> center;
 }
+
+
 @media screen and (min-width:992px) {
-#id
-<t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage{
-<t4 type="content" name="Image height for Medium-Large image" output="selective-output"
-    modifiers="striptags,htmlentities" format="height: $value;" />
+    #id
+    <t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage {
+        <t4 type="content" name="Image height for Medium-Large image" output="selective-output" modifiers="striptags,htmlentities" format="height: $value;" />
+    }
 }
+
+@media screen and (min-width: 768px) and (max-width: 991.999px) {
+    #id
+    <t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage {
+        <t4 type="content" name="Image for Small screens" output="imageurl" xhtml="false" format="background-image: url('$value');' " />
+    }
 }
-@media screen and (min-width: 768px) and (max-width: 991.999px){
-#id
-<t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage{
-<t4 type="content" name="Image for Small screens" output="imageurl" xhtml="false"
-    format="background-image: url('$value');' " />
-}
-}
-@media screen and (max-width: 767.999px){
-#id
-<t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage{
-<t4 type="content" name="Image for Extra Small screens" output="imageurl" xhtml="false"
-    format="background-image: url('$value');' " />
-}
+
+@media screen and (max-width: 767.999px) {
+    #id
+    <t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage {
+        <t4 type="content" name="Image for Extra Small screens" output="imageurl" xhtml="false" format="background-image: url('$value');' " />
+    }
 }
 <t4 type="content" name="Custom Banner CSS" output="normal" modifiers="medialibrary,nav_sections" />
 
@@ -37,11 +47,12 @@ background-position:
         <div class="spotlightImage col-xs-12 col-md-6">
             <span class="spotlightArrow" aria-hidden="true"></span> -->
 
-    <t4 type="content" name="Image Link" output="selective-output" modifiers="nav_sections" process-format="true" format="<a class=&quot;spotlightImageFilter&quot; href=&quot;<t4 type='content' name='Image Link' output='linkurl' modifiers='nav_sections' />&quot;>" />
-    
-    <img src="<t4 type='content' name='Spotlight Image' output='imageurl' />" alt="<t4 type='content' name='Alt Text' output='normal' modifiers='striptags,htmlentities' />">
-    
-    <t4 type="content" name="Image Link" output="selective-output" modifiers="nav_sections" process-format="true" format="</a>" />
+<t4 type="content" name="Image Link" output="selective-output" modifiers="nav_sections" process-format="true" format="<a class=&quot;titleBanner2BackgroundImageLink&quot; href=&quot;<t4 type='content' name='Image Link' output='linkurl' modifiers='nav_sections' />&quot;>" />
 
-<!-- 
-        </div> -->
+<img src="<t4 type='content' name='Image for Medium-Large Screens' output='imageurl' />" alt="<t4 type='content' name='Section Name' output='normal' modifiers='striptags,htmlentities' />">
+
+<t4 type="content" name="Image Link" output="selective-output" modifiers="nav_sections" process-format="true" format="</a>" />
+
+
+
+    <!-- alt="<t4 type='content' name='Alt Text' output='normal' modifiers='striptags,htmlentities' />" -->
