@@ -4,9 +4,25 @@
     background-image: url('
 
     <t4 type="content"
+        name="Image Link"
+        output="selective-output"
+        modifiers="nav_sections"
+        process-format="true"
+        format="<a class=&quot;titleBanner2BackgroundImageLink&quot; href=&quot;<t4 type='content' name='Image Link' output='linkurl' modifiers='nav_sections' />&quot;>" />
+
+
+    <t4 type="content"
         name="Image for Medium-Large Screens"
         output="imageurl"
-        xhtml="false" />');
+        xhtml="false"
+        alt="<t4 type='content' name='Section Name' output='normal' modifiers='striptags,htmlentities' />"/>
+        
+    <t4 type="content"
+        name="Image Link"
+        output="selective-output"
+        modifiers="nav_sections"
+        process-format="true"
+        format="</a>" />');
 
 
     background-position:
