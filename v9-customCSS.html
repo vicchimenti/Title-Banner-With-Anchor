@@ -1,36 +1,33 @@
 /* Start TitleBanner CSS */
 #id
 <t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage {
-    background-image: url('
-
-    <t4 type="content"
-        name="Image Link"
-        output="selective-output"
-        modifiers="nav_sections"
-        process-format="true"
-        format="<a class=&quot;titleBanner2BackgroundImageLink&quot; href=&quot;<t4 type='content' name='Image Link' output='linkurl' modifiers='nav_sections' />&quot;>" />
-
-
-    <t4 type="content"
-        name="Image for Medium-Large Screens"
-        output="imageurl"
-        xhtml="false"
-        alt="<t4 type='content' name='Section Name' output='normal' modifiers='striptags,htmlentities' />"/>
-        
-    <t4 type="content"
-        name="Image Link"
-        output="selective-output"
-        modifiers="nav_sections"
-        process-format="true"
-        format="</a>" />');
-
+    background-image:
+        <t4 type="content"
+            name="Image Link"
+            output="selective-output"
+            modifiers="nav_sections"
+            process-format="true"
+            format="<a class=&quot;titleBanner2BackgroundImageLink&quot; href=&quot;<t4 type='content' name='Image Link' output='linkurl' modifiers='nav_sections' />&quot;>" />
+            
+        url('<t4 type="content"
+            name="Image for Medium-Large Screens"
+            output="imageurl"
+            xhtml="false"
+            />');
+            
+        <t4 type="content"
+            name="Image Link"
+            output="selective-output"
+            modifiers="nav_sections"
+            process-format="true"
+            format="</a>" />
 
     background-position:
-    <t4 type="content"
-        name="Background horizontal positioning"
-        output="selective-output"
-        modifiers="striptags,htmlentities"
-        format="$value" /> center;
+        <t4 type="content"
+            name="Background horizontal positioning"
+            output="selective-output"
+            modifiers="striptags,htmlentities"
+            format="$value" /> center;
 }
 
 
@@ -73,3 +70,6 @@
 
 
     <!-- alt="<t4 type='content' name='Alt Text' output='normal' modifiers='striptags,htmlentities' />" -->
+
+    <!-- alt="
+    <t4 type='content' name='Section Name' output='normal' modifiers='striptags,htmlentities' />" -->
