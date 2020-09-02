@@ -1,5 +1,42 @@
 /* Start TitleBanner CSS */
 #id
+<t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage{
+background-image: url('
+<t4 type="content" name="Image for Medium-Large Screens" output="imageurl" xhtml="false" />');
+background-position:
+<t4 type="content" name="Background horizontal positioning" output="selective-output" modifiers="striptags,htmlentities"
+    format="$value" /> center;
+}
+@media screen and (min-width:992px) {
+#id
+<t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage{
+<t4 type="content" name="Image height for Medium-Large image" output="selective-output"
+    modifiers="striptags,htmlentities" format="height: $value;" />
+}
+}
+@media screen and (min-width: 768px) and (max-width: 991.999px){
+#id
+<t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage{
+<t4 type="content" name="Image for Small screens" output="imageurl" xhtml="false"
+    format="background-image: url('$value');' " />
+}
+}
+@media screen and (max-width: 767.999px){
+#id
+<t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage{
+<t4 type="content" name="Image for Extra Small screens" output="imageurl" xhtml="false"
+    format="background-image: url('$value');' " />
+}
+}
+<t4 type="content" name="Custom Banner CSS" output="normal" modifiers="medialibrary,nav_sections" />
+
+/* End TitleBanner CSS */
+
+
+
+
+<!-- /* Start TitleBanner CSS */
+#id
 <t4 type="meta" meta="content_id" /> .titleBanner2BackgroundImage {
     background-image: url('
     <t4 type="content" name="Image" output="imageurl" xhtml="false" />');
@@ -44,4 +81,4 @@
                 alt="<t4 type='content' name='Alt Text' output='normal' modifiers='striptags,htmlentities' />">
             <t4 type="content" name="Image Link" output="selective-output" modifiers="nav_sections" process-format="true"
                 format="</a>" />
-        </div> -->
+        </div> --> -->
