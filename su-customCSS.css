@@ -10,6 +10,10 @@ a.titleBanner2BackgroundImageLink {
   text-decoration: none;
 }
 
+.bannerText {
+  text-decoration: none;
+}
+
 .sectionHomepageBannerWrapper {
   margin-bottom: 10px;
 }
