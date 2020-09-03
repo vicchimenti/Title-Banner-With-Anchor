@@ -1,33 +1,31 @@
-<div>
-    <t4 type="content" name="Image Anchor" output="selective-output" modifiers="nav_sections" process-format="true"
-                        format="<a href=&quot;<t4 type='content' name='Image Anchor' output='linkurl' modifiers='nav_sections' />&quot;>" />
-        <div class="block">
-            <div class="titleBanner2Wrapper" id="id<t4 type='meta' meta='content_id' />">
-                <t4 type="meta" meta="html_anchor" />
 
-                <div class="titleBanner2">
-                    <div>
-                        <div class="titleBanner2BackgroundImage">
-                            <div class="titleBanner2Overlay titleBanner2Overlay<t4 type='content' name='Overlay Color' output='normal' display_field='value'/>"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="titleBanner2Triangles  titleBanner2Triangles<t4 type='content' name='Triangle Color' output='normal' display_field='value'/>"></div>
-                    <div class="titleBanner2Text">
-                        <h1>
-                            <t4 type="content" name="Subtitle" output="selective-output" format="<span>$value</span>" />
-                            <t4 type="content" name="Section Name" output="normal" modifiers="striptags,htmlentities" />
-                        </h1>
-                    </div>
-                </div>
+<div class="titleBanner2Wrapper" id="id<t4 type='meta' meta='content_id' />">
+    <t4 type="meta" meta="html_anchor" />
 
-                <!-- <div class="clearfix"></div> -->
+    <div class="titleBanner2">
+        <t4 type="content" name="Image Anchor" output="selective-output" modifiers="nav_sections" process-format="true"
+                    format="<a class=&quot;titleBanner2BackgroundImageLink&quot; href=&quot;<t4 type='content' name='Image Anchor' output='linkurl' modifiers='nav_sections' />&quot;>" />
+
+            <div class="titleBanner2BackgroundImage">
+                <div class="titleBanner2Overlay titleBanner2Overlay<t4 type='content' name='Overlay Color' output='normal' display_field='value'/>"></div>
             </div>
-        </div>
-    <t4 type="content" name="Image Anchor" output="selective-output" modifiers="nav_sections" process-format="true"
-                    format="</a>" />
+
+
+
+            <div class="titleBanner2Triangles  titleBanner2Triangles<t4 type='content' name='Triangle Color' output='normal' display_field='value'/>"></div>
+            <div class="titleBanner2Text block">
+                <h1>
+                    <t4 type="content" name="Subtitle" output="selective-output" format="<span>$value</span>" />
+                    <t4 type="content" name="Section Name" output="normal" modifiers="striptags,htmlentities" />
+                </h1>
+            </div>
+        <t4 type="content" name="Image Anchor" output="selective-output" modifiers="nav_sections" process-format="true" format="</a>" />
+    </div>
+
     <div class="clearfix"></div>
 </div>
+
+
         <!-- <div class="spotlightImage col-xs-12 col-md-6">
             <span class="spotlightArrow" aria-hidden="true"></span>
         
