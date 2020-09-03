@@ -4,6 +4,9 @@
 
 a.titleBanner2BackgroundImageLink {
   display: block;
+}
+
+.titleBanner2Text {
   text-decoration: none;
 }
 
@@ -148,7 +151,7 @@ a.titleBanner2BackgroundImageLink {
 }
 
 @media screen and (min-width: 992px) {
-  
+
   #id<t4 type="meta" meta="content_id" /> .sectionHomepageBanner {
     background-image: url('<t4 type="content" name="Image for Medium-Large Screens" output="imageurl" xhtml="false" />');
     <t4 type="content" name="Image height for Medium-Large image" output="selective-output" modifiers="striptags,htmlentities" format="height: $value;" />
