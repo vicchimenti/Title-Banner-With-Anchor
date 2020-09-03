@@ -2,16 +2,15 @@
     <t4 type="meta" meta="html_anchor" />
 
     <div class="titleBanner2">
-        <t4 type="content" name="Image Link" output="selective-output" modifiers="nav_sections" process-format="true" format="<a href=`<t4 type='content' name='Image Link' output='linkurl' modifiers='nav_sections' />`>" />
+        <div class="titleBanner2BackgroundImage">
+            <t4 type="content" name="Image Anchor" output="selective-output" modifiers="nav_sections" process-format="true" format="<a href=&quot;<t4 type='content' name='Image Anchor' output='linkurl' modifiers='nav_sections' />&quot;>" />
 
-            <div class="titleBanner2BackgroundImage">
 
                 <div class="titleBanner2Overlay titleBanner2Overlay<t4 type='content' name='Overlay Color' output='normal' display_field='value'/>"></div>
 
-            </div>
 
-        <t4 type="content" name="Image Link" output="selective-output" modifiers="nav_sections" process-format="true" format="</a>" />
-
+            <t4 type="content" name="Image Anchor" output="selective-output" modifiers="nav_sections" process-format="true" format="</a>" />
+        </div>
         <div class="titleBanner2Triangles  titleBanner2Triangles<t4 type='content' name='Triangle Color' output='normal' display_field='value'/>"></div>
         <div class="titleBanner2Text">
             <h1>
@@ -38,6 +37,10 @@
                 format="</a>" />
 
                 class=&quot;titleBanner2BackgroundImageLink&quot;
+
+                <t4 type='content' name='Image Link' output='linkurl' modifiers='nav_sections' />
+
+                <script type="text/javascript">
         
         
         </div> -->
