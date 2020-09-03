@@ -6,11 +6,15 @@ a.titleBanner2BackgroundImageLink {
   display: block;
 }
 
-.titleBanner2Text {
+a.titleBanner2BackgroundImageLink:hover {
   text-decoration: none;
 }
 
-.tBannerText {
+/* .titleBanner2Text {
+  text-decoration: none;
+} */
+
+h1.tBannerText {
   text-decoration: none;
 }
 
